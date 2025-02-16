@@ -1,0 +1,14 @@
+/* Remove Shadows & Backgrounds */
+body {
+    background: none !important;
+}
+
+.max-w-4xl {
+    box-shadow: none !important;
+    border: 2px solid black;
+}
+
+/* Ensure Print-Friendly Borders */
+.border-box, .line-box, .textarea-box {
+    border: 2px solid black !important;
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+.border-box {
+    border-bottom: 2px solid black;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.notebook-lines {
+    border-bottom: 1px dashed gray;
+    height: 20px;
+    margin-bottom: 5px;
+}
