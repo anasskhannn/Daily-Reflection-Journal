@@ -25,3 +25,10 @@ body {
     height: 20px;
     margin-bottom: 5px;
 }
+
+.blank-button{
+    width: 40px; /* Adjust width as needed */
+    height: 25px; /* Adjust height as needed */
+    border: 2px solid black; /* Darker black border */
+    background-color: transparent; /* No background */
+}
