@@ -42,3 +42,13 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Activites Title Alignment */
+
+.habit-row p, 
+.habit-row button, 
+.habit-row input {
+    display: inline-block; /* Makes them stay in one row */
+    vertical-align: middle; /* Ensures proper vertical alignment */
+    margin-right: 20px; /* Adds spacing between elements */
+}
