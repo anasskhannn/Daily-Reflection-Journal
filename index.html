@@ -3,147 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Reflection Journal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="prints.css" media="print">
+    <title>Daily Life Journal</title>
+    <style>
+        .main{
+            width: 60%;
+            margin: auto;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+
+    </style>
 </head>
-<body class="p-4">
-    <button class="download-btn" onclick="window.print()">Download as PDF</button>
-    <div class="max-w-4xl mx-auto bg-white p-4 shadow-lg border-black">
-        
-        <!-- Header Section (Date & Quote) -->
-        <div class="flex justify-between mb-2">
-            <div class="font-bold">Date:________</div>
-            <div class="font-bold">Day:________</div>
-        </div>
-
-        <!-- Quote Section (Centered, Restored) -->
-        <blockquote class="quote-section text-center italic text-gray-600">
-            "A Random Motivational Quote will Appear here A Random Motivational Quote will Appear here A Random Motivational Quote will Appear here A Random Motivational Quote will Appear here A Random Motivational Quote will Appear here A Random Motivational Quote will Appear hereA Random Motivational Quote will Appear here"
-            <footer class="text-center font-bold">- Albert Einstein</footer>
-        </blockquote>
-
-        <!-- Main Grid Layout -->
-        <div class="grid-container">
-            <div class="section">
-                <h2 class="font-bold mb-2 text-lg">Good Habits/Activities to Maintain:</h2>
-
-
-                <div class="habit-row">
-                    <p class="font-bold">Spiritual: <button class="blank-button"></button>
-                    <input type="checkbox" class="tracking-checkbox"></p>  
-                </div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                
-
-                <div class="habit-row">
-                    <p class="font-bold">Physical: <button class="blank-button"></button>
-                        <input type="checkbox" class="tracking-checkbox">
-                        </p>
-                    </div>
-                    <div class="notebook-lines"></div>
-                    <div class="notebook-lines"></div>
-
-
-                <div class="habit-row">
-                    <p class="font-bold">Mental: <button class="blank-button"></button>
-                        <input type="checkbox" class="tracking-checkbox">
-                        </p>
-                </div>
-                    <div class="notebook-lines"></div>
-                    <div class="notebook-lines"></div>
-
-
-                <div class="habit-row">
-                    <p class="font-bold">Economic: <button class="blank-button"></button>
-                        <input type="checkbox" class="tracking-checkbox">
-                        </p>
-                </div>
-                    <div class="notebook-lines"></div>
-                    <div class="notebook-lines"></div>
-
-
-                <div class="habit-row">
-                    <p class="font-bold">Emotional: <button class="blank-button"></button>
-                        <input type="checkbox" class="tracking-checkbox">
-                        </p>
-                </div>
-                    <div class="notebook-lines"></div>
-                    <div class="notebook-lines"></div>
-
-
-                <div class="habit-row">
-                    <p class="font-bold">General: <button class="blank-button"></button>
-                        <input type="checkbox" class="tracking-checkbox">
-                        </p>
-                </div>
-                    <div class="notebook-lines"></div>
-                    <div class="notebook-lines"></div>
-                
-
-                <p class="font-bold mt-4">Total Score for Today: ____ /+6</p>
-
-                <p class="font-bold mt-4">I ended the day in positive, negative or neutral?</p>
-                <div class="flex space-x-4 justify-center">
-                    <button class="border border-black px-3 py-1 rounded">-1</button>
-                    <button class="border border-black px-3 py-1 rounded">0</button>
-                    <button class="border border-black px-3 py-1 rounded">+1</button>
-                </div>
-
-                <h2 class="font-bold mt-4">Bad Habit to Overcome:</h2>
-                <div class="notebook-lines"></div>
-
-
-                <p class="font-bold mt-4">Did You Resist The Bad Habit?</p>
-                <div class="flex space-x-4 justify-center">
-                    <button class="border border-black px-3 py-1 rounded">YES</button>
-                    <button class="border border-black px-3 py-1 rounded">NO</button>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="font-bold mb-2 text-lg">Self Reflection</h2>
-
-                <p class="font-bold">Productivity:</p>
-                <div class="grid grid-cols-5 gap-2">
-                    <button class="border border-black px-2 py-1 rounded">1</button>
-                    <button class="border border-black px-2 py-1 rounded">2</button>
-                    <button class="border border-black px-2 py-1 rounded">3</button>
-                    <button class="border border-black px-2 py-1 rounded">4</button>
-                    <button class="border border-black px-2 py-1 rounded">5</button>
-                    <button class="border border-black px-2 py-1 rounded">6</button>
-                    <button class="border border-black px-2 py-1 rounded">7</button>
-                    <button class="border border-black px-2 py-1 rounded">8</button>
-                    <button class="border border-black px-2 py-1 rounded">9</button>
-                    <button class="border border-black px-2 py-1 rounded">10</button>
-                </div>
-
-                <p class="font-bold mt-4">Mood:</p>
-                <div class="flex space-x-4">
-                    <button class="text-4xl">😃</button>
-                    <button class="text-4xl">😐</button>
-                    <button class="text-4xl">☹️</button>
-                </div>
-
-                <h2 class="font-bold mt-4">Today I am Thankful For:</h2>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-
-                <h2 class="font-bold mt-4">Today I Am Proud of:</h2>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-
-                <h2 class="font-bold mt-4">Today's Note:</h2>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-                <div class="notebook-lines"></div>
-            </div>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <ul><a href="/index.html">Home</a></ul>
+            <ul><a href="/book.html">Book</a></ul>
         </div>
     </div>
 </body>
