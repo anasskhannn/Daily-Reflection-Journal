@@ -68,4 +68,8 @@ body {
     .download-btn {
         display: none !important;
     }
+
+    .top-buttons {
+        display: none !important;
+    }
 }

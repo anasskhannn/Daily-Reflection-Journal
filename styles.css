@@ -71,3 +71,26 @@ body {
 .download-btn:hover {
     background-color: #444;
 }
+
+.top-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 5px 10px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #444;
+}
