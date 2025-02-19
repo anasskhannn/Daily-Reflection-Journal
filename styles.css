@@ -21,7 +21,7 @@ body {
 }
 
 .notebook-lines {
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px dashed black;
     height: 16px;
     margin-bottom: 10px;
 }
