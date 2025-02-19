@@ -1,4 +1,5 @@
-const api_url = "https://api.allorigins.win/get?url=" + encodeURIComponent("https://zenquotes.io/api/quotes/random");
+const api_url = "https://api.allorigins.win/get?url=" + encodeURIComponent(`https://zenquotes.io/api/quotes/random?${new Date().getTime()}`);
+
 
 async function fetchQuote() {
     try {
