@@ -3,12 +3,69 @@ body {
     background: none !important;
 }
 
+/* Ensure Print-Friendly Borders */
 .max-w-4xl {
     box-shadow: none !important;
-    border: 2px solid black;
+    border: 1px solid black;
+    width: 100%; /* Ensures it fits within A4 */
 }
 
-/* Ensure Print-Friendly Borders */
-.border-box, .line-box, .textarea-box {
-    border: 2px solid black !important;
+/* Print Page Size & Scaling */
+@page {
+    size: A4 portrait;  /* Ensures printing on a single A4 page */
+    margin: 1cm;      /* Slightly adjusted margin for better fit */
+}
+
+@media print {
+    /* Reset Scale to Prevent Content Cutting */
+    body {
+        transform: none !important;  
+        font-size: 15px !important; /* Increased font size for readability */
+    }
+
+    /* Ensure the container uses full width but does not overflow */
+    .max-w-4xl {
+        width: 100%; /* Ensures it does not overflow */
+        padding: 12px !important;
+    }
+
+    /* Prevent Quote & Header from separating */
+    .header, .quote-section {
+        page-break-after: avoid;
+    }
+
+    /* Ensure the grid stays on one page */
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensures it wraps properly instead of cutting */
+        gap: 15px;
+    }
+
+    /* Ensure each section fits properly */
+    .section {
+        flex: 1 1 48%; /* Ensures two sections fit side-by-side */
+        padding: 8px;
+    }
+
+    /* Expand notebook lines slightly */
+    .notebook-lines {
+        height: 18px;
+        margin-bottom: 6px;
+    }
+
+    /* Increase button and checkbox size slightly */
+    .blank-button {
+        width: 45px;
+        height: 30px;
+    }
+
+    .tracking-checkbox {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Hide the Download Button in Print */
+    .download-btn {
+        display: none !important;
+    }
 }
