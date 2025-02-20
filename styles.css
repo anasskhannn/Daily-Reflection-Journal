@@ -92,7 +92,6 @@ body {
     background-color: #444;
 }
 
-
 /* Responsive styles - add to the end of your styles.css file */
 @media (max-width: 768px) {
     /* Adjust grid layout for smaller screens */
@@ -106,25 +105,10 @@ body {
       margin: 45px auto 10px;
     }
     
-    /* Give more space for top navigation on mobile */
-    .top-buttons {
-      top: 5px;
-      left: 5px;
-      flex-direction: row;
-    }
-    
-    /* Adjust download button positioning */
-    .download-btn {
-      top: 5px;
-      right: 5px;
-      padding: 5px 8px;
-      font-size: 12px;
-    }
-    
-    /* Make button text more visible on small screens */
-    .nav-button {
-      padding: 4px 8px;
-      font-size: 12px;
+    .download-btn,
+    .top-buttons,
+    .nav-button { 
+      display: none !important;
     }
     
     /* Ensure form elements are properly sized for touch */
@@ -171,5 +155,12 @@ body {
     .quote-section {
       font-size: 14px;
       margin: 10px 0;
+    }
+
+    /* Hide all buttons on small devices */
+    .download-btn,
+    .top-buttons,
+    .nav-button {
+      display: none !important;
     }
   }
