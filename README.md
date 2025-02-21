@@ -70,11 +70,13 @@ daily-reflection-journal/
 ├── book.html           # Main journal interface
 │
 ├── css/
-│   ├── styles.css      # Main application styles
+│   ├── styles.css
+│   ├── book.css      # Main application styles
 │   └── prints.css      # Print-specific styles
 │
 ├── js/
-│   ├── main.js         # Core functionality
+│   ├── main.js
+│   ├── script.js         # Core functionality
 │   └── apiService.js   # API service module
 |
 ├── assets/
