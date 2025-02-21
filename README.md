@@ -156,7 +156,7 @@ This is a **static project** and does **not** require any installation. Simply:
 ---
 
 ## **🌟 Future Improvements**
-- [ ] Add **dark mode** support.  
+- [X] Add **dark mode** support.  
 - [ ] Allow **saving journal entries locally** in `localStorage`.  
 - [ ] Enable **custom themes & fonts** for personalization.  
 - [ ] Implement **automatic PDF generation** instead of browser print.  
