@@ -75,8 +75,8 @@ daily-reflection-journal/
 │   └── prints.css      # Print-specific styles
 │
 ├── js/
-│   ├── main.js
-│   ├── script.js         # Core functionality
+│   ├── script.js         # Dark Mode Logic
+│   ├── main.js           # Core functionality
 │   └── apiService.js   # API service module
 |
 ├── assets/
