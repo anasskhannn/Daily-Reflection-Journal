@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Life Journal</title>
     <style>
-        .navbar{
+        .navbar {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
-        a{
-            font-family: Arial, sans-serif;;
-            color: black;
+
+        .navbar a {
+            font-size: large;
+            font-weight: bold;
+            font-family: "Handlee", cursive;
             text-decoration: none;
+            color: black;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: gray;
         }
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <ul><a href="/index.html">Home</a></ul>
         <ul><a href="/book.html">Book</a></ul>
     </div>
 </body>
+
 </html>

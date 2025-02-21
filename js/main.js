@@ -7,3 +7,7 @@ async function updateQuote() {
 }
 
 document.addEventListener('DOMContentLoaded', updateQuote);
+
+document.getElementById("download-btn").addEventListener("click", () => {
+    window.print();
+});
