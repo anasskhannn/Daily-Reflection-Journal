@@ -1,6 +1,11 @@
 @page {
     size: A4 portrait;
-    margin: 1cm;
+    margin: 0.5cm;
+    /* This prevents browser from adding headers and footers */
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
 }
 
 @media print {
